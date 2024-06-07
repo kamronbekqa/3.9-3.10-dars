@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+/* Header Styles  */
+
+header {
+  padding: 10px 0;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-right a {
+  color: #36536b;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.header-right button {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 100px;
+  background-color: #ba4270;
+  color: white;
+  box-shadow: 10px 10px 25px -10px #36536b40;
+}
+
+.hidden {
+  display: none;
+}
+
+/* hero styles */
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-left h1 {
+  font-weight: 700;
+  font-size: 60px;
+  max-width: 546px;
+  min-width: 546px;
+  color: #36536b;
+}
+.hero-left {
+  display: flex;
+  align-items: center;
+}
+.hero-right img {
+  width: 100%;
+}
+/* break points */
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0 50px;
+  }
+
+  .hero-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .hero-left h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 48px;
+  }
+  .hero-right img {
+    width: 100%;
+  }
+  section.work{
+    height: 615px;
+  }
+  .work-wrapper{
+    flex-direction: column-reverse;
+  }
+  .work-right{
+    padding-top: 88px;
+  }
+  .form-wrapper{
+    flex-direction: column;
+  }
+  .form-right h2,.form-right p{
+    text-align: center;
+  }
+  .icon-p{
+    max-width: 200px; 
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .header-right a,
+  .header-right button {
+    display: none;
+  }
+  .hero-right img {
+    max-width: 128px;
+  }
+  .hero-left h1 {
+    font-size: 30px;
+    max-width: 40px;
+  }
+    section.work{
+    height: 670px;
+  }
+  .work-wrapper{
+    flex-direction: column-reverse;
+  }
+  .work-right{
+    padding-top: 88px;
+    flex-wrap: wrap;
+  }
+  .form-wrapper{
+    flex-direction: column;
+  }
+  .form-right h2,.form-right p{
+    text-align: center;
+  }
+  .icons-wrapper{
+    flex-direction: column;
+  }
+  .footer-wrapper{
+    flex-direction: column;
+  }
+}
+
+/* work styles */
+ .work{
+  background: #1B262F;
+  height: 480px;
+ }
+.work-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.work-left button {
+  max-width: 129px;
+}
+.work-left h2 {
+  margin-top: 100px;
+  font-family: DM Serif Display;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: -0.3692307770252228px;
+}
+.work-left p {
+  margin-top: 24px;
+  max-width: 445px;
+  display: flex;
+  gap: 10px;
+}
+.work-left button {
+  color: white;
+  padding: 15px 32px;
+  background-color: #1B262F;
+  border-radius: 1000px;
+  border: 1px solid white;
+  margin-top: 32px;
+}
+.work-right{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 536px;
+  gap:46px;
+}
+/* form styles */
+.form-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;    
+}
+
+.form-h2{
+font-size: 48px;
+font-weight: 400;
+line-height: 56px;
+letter-spacing: -0.3692307770252228px;
+color: #36536B;
+margin-bottom: 24px;
+}
+form-p{
+  max-width: 440px;
+}
+/* icons start */
+
+.icons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 0;
+}
+.main-p{
+  text-align: center;
+  
+}
+.icon-p{
+  text-align: center;
+  position: relative;
+  left: 20px;
+  max-width: 300px;
+
+}
+.icon-h4{
+  text-align: center;
+  position: relative;
+  left: 20px;
+}
+
+
+/* footer styles  */
+footer{
+    background-color: #1b262f;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.footer-left{
+  gap: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer-right{
+  display: flex;
+  gap: 30px;
+}
+.footer-left a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  bottom: 12px;
+  gap: 30px;
+}
